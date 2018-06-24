@@ -1,15 +1,14 @@
-#  Os conjuntos de dados
-Horário de início (ex., 2017-01-01 00:07:57)
-Horário de término (ex., 2017-01-01 00:20:53)
-Duração da viagem (em segundos, ex., 776)
-Estação inicial (ex., Broadway & Barry Avenue)
-Estação final (ex., Sedgwick St & do North Ave)
-Tipo de usuário (assinante ou cliente)
-Gênero do usuário
-Ano de nascimento do usuário
+# Os conjuntos de dados
+  - Horário de início (ex., 2017-01-01 00:07:57)
+  - Horário de término (ex., 2017-01-01 00:20:53)
+  - Duração da viagem (em segundos, ex., 776)
+  - Estação inicial (ex., Broadway & Barry Avenue)
+  - Estação final (ex., Sedgwick St & do North Ave)
+  - Tipo de usuário (assinante ou cliente)
+  - Gênero do usuário
+  - Ano de nascimento do usuário
 
-
-As perguntas
+# As perguntas
 Você vai escrever um código para completar as seguintes tarefas sobre os dados de compartilhamento de bicicletas:
 
 Tarefa 1: Mostre as 20 primeiras amostras (linhas) da base de dados
