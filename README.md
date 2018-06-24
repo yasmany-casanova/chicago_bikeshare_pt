@@ -11,7 +11,7 @@
   - Ano de nascimento do usuário
 
 # As perguntas
-    Você vai escrever um código para completar as seguintes tarefas sobre os dados de compartilhamento de bicicletas:
+  Você vai escrever um código para completar as seguintes tarefas sobre os dados de compartilhamento de bicicletas:
 
   - Tarefa 1: Mostre as 20 primeiras amostras (linhas) da base de dados
   - Tarefa 2: Mostre o gênero (coluna) das 20 primeiras amostras
