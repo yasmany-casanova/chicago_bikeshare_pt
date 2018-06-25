@@ -90,7 +90,7 @@ for row in data_list:
     gender = str.lower(row[-2])
     if gender == str.lower('Male'):
         male += count
-    if gender == str.lower('Female'):
+    elif gender == str.lower('Female'):
         female += count
 
 # Verificando o resultado
@@ -200,9 +200,9 @@ def count_user_types(data_list):
         user_type = str.lower(row[-3])
         if user_type == str.lower('Customer'):
             customer += count
-        if user_type == str.lower('Dependent'):
+        elif user_type == str.lower('Dependent'):
             dependent += count
-        if user_type == str.lower('Subscriber'):
+        elif user_type == str.lower('Subscriber'):
             subscriber += count
     return [customer, dependent, subscriber]
 
@@ -241,7 +241,7 @@ input("Aperte Enter para continuar...")
 print("\nTAREFA 9: Imprimindo o mínimo, máximo, média, e mediana")
 
 trip_duration_list = column_to_list(data_list, 2)
-item = lambda x: list(map(float, x))
+item = lambda trip_duration: list(map(float, trip_duration))
 
 def find_max(trip_duration_list: list):
     """ Função para localizar o maior valor na lista
@@ -297,7 +297,7 @@ def find_median_trip(trip_duration_list: list):
     if len(data)%2 == 0:
         left_side = int(len(data)/2 - 1)
         right_side = int(len(data)/2)
-        median_trip = float((int(data[left_side]) + int(data[right_side])) / 2)
+        median_trip = float((int(data[left_side]) + int(data[right_side]))/2)
     else:
         middle = int(len(data)/2)
         median_trip = int(data[middle])
@@ -346,13 +346,13 @@ print("Você vai encarar o desafio? (yes ou no)")
 answer = "yes"
 
 def count_items(column_list: list):
-    """ Função para contar os tipos de usuários
+    """ Função para contar o valor numa determinada coluna
 
     Argumentos:
-    column_list: list. dados contendo o(s) valor(es) do  tipo de usuário
+    column_list: list. dados contendo o(s) valor(es) numa determinada coluna
 
     Retorna:
-    Os tipos de usuários, quantidade
+    Os tipos e a quantidade
     """
     item_types = set(column_list)
     count_items = items = []
