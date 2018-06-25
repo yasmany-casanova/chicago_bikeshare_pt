@@ -122,7 +122,7 @@ def count_gender(data_list: list):
         gender = str.lower(row[-2])
         if gender == str.lower('Male'):
             male += count
-        if gender == str.lower('Female'):
+        elif gender == str.lower('Female'):
             female += count
     return [male, female]
 
