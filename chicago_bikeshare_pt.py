@@ -85,13 +85,12 @@ input("Aperte Enter para continuar...")
 print("\nTAREFA 4: Imprimindo quantos masculinos e femininos nós encontramos")
 
 male = female = 0
-count = 1;
 for row in data_list:
     gender = str.lower(row[-2])
-    if gender == str.lower('Male'):
-        male += count
-    elif gender == str.lower('Female'):
-        female += count
+    if gender == 'male':
+        male += 1
+    elif gender == 'female':
+        female += 1
 
 # Verificando o resultado
 print("Masculinos: ", male, "\nFemininos: ", female)
@@ -117,13 +116,12 @@ def count_gender(data_list: list):
     Uma lista com a quantidade de cada gênero
     """
     male = female = 0
-    count = 1;
     for row in data_list:
         gender = str.lower(row[-2])
-        if gender == str.lower('Male'):
-            male += count
-        elif gender == str.lower('Female'):
-            female += count
+        if gender == 'male':
+            male += 1
+        elif gender == 'female':
+            female += 1
     return [male, female]
 
 print(count_gender(data_list))
@@ -195,15 +193,14 @@ def count_user_types(data_list):
     Uma lista contendo a quantidade de usuários por tipo
     """
     customer = dependent = subscriber = 0
-    count = 1;
     for row in data_list:
         user_type = str.lower(row[-3])
-        if user_type == str.lower('Customer'):
-            customer += count
-        elif user_type == str.lower('Dependent'):
-            dependent += count
-        elif user_type == str.lower('Subscriber'):
-            subscriber += count
+        if user_type == 'customer':
+            customer += 1
+        elif user_type == 'dependent':
+            dependent += 1
+        elif user_type == 'subscriber':
+            subscriber += 1
     return [customer, dependent, subscriber]
 
 user_types_list = column_to_list(data_list, -3)
